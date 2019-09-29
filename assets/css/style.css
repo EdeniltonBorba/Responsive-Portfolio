@@ -3,13 +3,11 @@
 }
 
 body {
-    background-image: url();
+    background-image: url("cardboard.png");
     font-size: 18px;
     line-height: 34px;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
-    background-color: #dddddd;
-    margin: 0;
 }
 
 .container {
@@ -19,31 +17,7 @@ body {
     clear: both;
 }
 
-h1, h2, h3, p {
-    margin-bottom: 20px;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700px;
-    color: #4aaaa5;
-}
-
-h1 {
-    font-size: 30px;
-    line-height: 49px;
-    border-bottom: 3px solid #dddddd;
-    padding-bottom: 20px;
-}
-
-
-h2,h3 {
-    font-size: 22px;
-}
+/*header*/
 
 #masthead {
     background: #ffffff;
@@ -88,11 +62,34 @@ nav a {
 nav a:first-child {
     border-left: 0 none;
 }
-#main-section {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
 }
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    color: #4aaaa5;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+    padding-bottom: 20px;
+}
+
+
+h2,h3 {
+    font-size: 22px;
+}
+
+/*main*/
 
 .main-container {
     background: #ffffff;
@@ -104,6 +101,12 @@ nav a:first-child {
     border: 1px solid #dddddd;
 }
 
+#main-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    
+}
+
 .auth-image {
     width: 200px;
     height: auto;
@@ -111,11 +114,6 @@ nav a:first-child {
     float: left;
     margin-right: 25px;
 }
-
-
-
-
-
 
 footer {
     background: #666666;
@@ -143,7 +141,11 @@ footer {
 }
 
 .work img {
-    width: 100px;
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
     border: 0 none;
     opacity: .8px;
 }
@@ -193,7 +195,7 @@ textarea {
     height: 200px;
 }
 
-input [type=submit] {
+input[type=submit] {
     background: #4aaaa5;
     border: 0 none;
     color: #ffffff;
@@ -204,7 +206,6 @@ input [type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-    
     #masthead {
       margin: 0 10px 30px 0;
     }
@@ -240,8 +241,7 @@ input [type=submit] {
   
 }
   
-@media screen and (max-width: 768px) {
-    
+@media screen and (min-width: 641px) and (max-width: 768px) {
     #masthead {
       margin: 0 10px 30px 0;
     }
@@ -274,27 +274,21 @@ input [type=submit] {
     .main-section {
       margin-top: 40px;
     }
-  
-    label {
-      font-size: x-large;
-    }
 
+    label {
+    font-size: x-large;
+    }
     #name, #email {
     font-size: 20px;
-    }
-
     footer {
       height: auto;
     }
-
     #contact-form ul {
       list-style: none;
     }
 }
-
   
 @media screen and (max-width: 640px) {
-    
     #masthead {
       position: static;
       margin: 0 10px 30px 0;
@@ -302,7 +296,7 @@ input [type=submit] {
     }
   
     .container {
-      display: grid;
+    display: grid
     }
     #logo {
     width: 100%;
@@ -311,6 +305,7 @@ input [type=submit] {
   
     nav {
     font-size: 30px;
+    float:none;
     }
   
     .work {
@@ -322,33 +317,26 @@ input [type=submit] {
     }
   
     .auth-image {
-      width: 100%;
-      float: none;
+    width: 100%;
+    float: none;
     }
   
     section p {
       font-size: 30px;
     }
-
     .main-section {
-      height: fit-content;
+    height: fit-content;
     }
-
     label {
-      font-size: xx-large;
+    font-size: xx-large;
     }
-
     #name, #email {
-      font-size: 20px;
+    font-size: 20px;
     }
-
     #main-container {
     padding-top: 0px;
-      }
-    #contact-form ul {
-      list-style: none;
     }
-  
+    #contact-form ul {
+    list-style: none;
+    }
 }
-
-  
